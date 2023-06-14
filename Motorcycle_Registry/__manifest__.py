@@ -11,6 +11,8 @@
     'category': 'Kawiil',
     'depends': ['base'],
     'data': [],
-    'demo': [],
+    'demo': [
+        'demo/registrationDemo.xml',
+    ],
     'application': True,
 }
