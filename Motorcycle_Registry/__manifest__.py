@@ -10,7 +10,11 @@
     'website': 'https://github.com/visv-odoo/Training-Exerisise-motorbike-odoo.git',
     'category': 'Kawiil',
     'depends': ['base'],
-    'data': [],
+    'data': [
+        'security/registry_groups.xml',
+        'security/ir.model.access.csv',
+        'security/registry_security.xml'
+    ],
     'demo': [
         'demo/registrationDemo.xml',
     ],
