@@ -13,7 +13,8 @@
     'data': [
         'security/registry_groups.xml',
         'security/ir.model.access.csv',
-        'security/registry_security.xml'
+        'security/registry_security.xml',
+        'views/motorcycle_registry_menuitems.xml',
     ],
     'demo': [
         'demo/registrationDemo.xml',
