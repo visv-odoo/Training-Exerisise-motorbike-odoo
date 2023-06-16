@@ -19,11 +19,11 @@
         sequence="1">
         <menuitem
             id="menu_registry_sub"
-            name=""
+            name="Motorcycle Registry"
             sequence="1">
             <menuitem
                 id="motorcycle_registry_menu"
-                name="name"
+                name="Registry"
                 action="registry_submenu_action"
                 sequence="2">
             </menuitem>

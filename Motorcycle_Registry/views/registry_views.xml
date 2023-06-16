@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="motorcycle_registry_view_form" model="ir.ui.view">
+        <field name="name">motorcycle.registry.view.form</field>
+        <field name="model">motorcycle.registry</field>
+        <field name="arch" type="xml">
+            <form string="motorcycle.registry view">
+                <sheet>
+                    <h1><field name="registry_number"/></h1>
+                    <group>
+                        <group>
+                            <separator string="Motorcycle Information"/>
+                            <field name="register_date"/>
+                            <field name="vin"/>
+                            <field name="current_milage" />
+                            <field name="license_plate" />
+                        </group>
+                        <group>
+                            <separator string="Owner Information"/>
+                            <field name="owner_id"/>
+                            <field name="first_name" />
+                            <field name="last_name" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Related Documents">
+                            <group name="name" string="string">
+                                <field name="certificate_title" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="motorcycle_registry_view_list" model="ir.ui.view">
+        <field name="name">motorcycle.registry.view.list</field>
+        <field name="model">motorcycle.registry</field>
+        <field name="arch" type="xml">
+            <tree string="Registry">
+                <field name="registry_number" />
+                <field name="vin" />
+                <field name="owner_id"/>
+                <field name="license_plate" />
+                <field name="first_name" />
+                <field name="last_name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="motorcycle_registry_view_search" model="ir.ui.view">
+        <field name="name">motorcycle.registry.view.search</field>
+        <field name="model">motorcycle.registry</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="registry_number" />
+                <field name="vin" />
+                <field name="owner_id"/>
+                <field name="last_name"/>
+                <field name="license_plate" />
+                <searchpanel>
+                    <field name="owner_id" select="multi" enable_counters="1"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+</odoo>
